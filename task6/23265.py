@@ -26,7 +26,7 @@ for i in range (2):
 
 up()
 
-for x in range(0,):
+for x in range(0,50):
     for y in range(-30,0):
         goto(x*m,y*m)
         dot(3, 'purple')
