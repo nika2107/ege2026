@@ -24,7 +24,7 @@ def convert(num, sys):
     while num != 0:
         res += str(num % sys)
         num //= sys
-    return res[::-1]
+    return res[::-1] if res else '0'
 
 # Перевод в любую систему счисления (2 <= sys <= 36)
 from string import printable
@@ -34,7 +34,7 @@ def convert2(num, sys):
     while num != 0:
         res += printable[num % sys]
         num //= sys
-    return res[::-1]
+    return res[::-1] if res else '0'
 
 # Cpeзы
 test = 'Hello world!'
