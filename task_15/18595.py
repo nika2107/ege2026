@@ -1,4 +1,3 @@
-from itertools import combinations
 
 from itertools import combinations
 def f(x):
