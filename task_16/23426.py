@@ -9,6 +9,6 @@ def G(n):
         return n
     if n > 20:
         return G(n - 2) + 1
-for n in range(1, 3000):
-    F(n)
+for i in range(1, 3000):
+    F(i)
 print(F(25000))
