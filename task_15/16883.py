@@ -1,6 +1,4 @@
 from itertools import combinations
-
-from itertools import combinations
 def f(x):
     P = 25 <= x <= 73
     Q = 75 <= x <= 118
