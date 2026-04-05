@@ -1,0 +1,6 @@
+from fnmatch import  *
+
+for x in range(0, 10**8, 171):
+    sx = str(x)
+    if fnmatch(sx,'1*23??56'):
+        print(x, x // 171)
