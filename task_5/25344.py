@@ -10,7 +10,7 @@ def convert(num,sys):
 ans = []
 for N in range (0, 300):
     if N % 3 == 0:
-        R = R + R[-2:]
+        R += R[-2:]
     else:
         sum_d = sum(map(int, R))
         R += convert(sum_R * 3)

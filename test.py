@@ -1,4 +1,10 @@
-import re
+from re import finditer
 s = 'BADOCA'
-print(re.findall(r'([BCD][AO])+', s))
-print(re.findall(r'(?:[BCD][AO])+', s))
+print(r'([BCD][AO])+', s)
+print(finditer(r'(?:[BCD][AO])+', s))
+
+pattern = r'([BCD][AO])+'
+
+matches = [match.group() for match in finditer(pattern, s)]
+
+print(matches)
